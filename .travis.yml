@@ -219,13 +219,13 @@ before_install:
   - pip list
   - pip install $EXTRA_PACKAGES
   - echo "Docker Load..."
-  - IMAGE=docker_images/images.tar
-  - if [ -e "$IMAGE" ]; then
-      tar -tvf $IMAGE;
-    else 
-      echo "$IMAGE does not exist";
-    fi;
-  - docker load -i docker_images/images.tar || true
+# - IMAGE=docker_images/images.tar
+# - if [ -e "$IMAGE" ]; then
+#     tar -tvf $IMAGE;
+#   else 
+#     echo "$IMAGE does not exist";
+#   fi;
+# - docker load -i docker_images/images.tar || true
   - docker images
 
 # install all of the dependencies you need here
