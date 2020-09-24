@@ -218,9 +218,9 @@ before_install:
   - pip list
   - pip install $EXTRA_PACKAGES
   - echo "Docker Load..."
-  - if [[ -f docker_images/images.tar]]; then
-      tar -tvf docker_images/images.tar;
-    fi;
+  - if [[ -e docker_images/images.tar]]; then
+      tar -tvf docker_images/images.tar
+    fi
   - docker load -i docker_images/images.tar || true
   - docker images
 
