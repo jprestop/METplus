@@ -91,7 +91,7 @@ env:
     # if set to false, to use DOCKER_USER_* settings, your dockerhub container.
     - DOCKERHUB_USE_DEFAULT=true
 
-matrix:
+jobs:
   include:
     - stage: "Stage 1"
       name: "Docs"
