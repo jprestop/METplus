@@ -127,36 +127,36 @@ matrix:
           printenv | grep -i ncar;
           echo "==== who am I";
           whoami;
-#   - stage: "Stage 3"
-#     name: "Docker Setup"
-#     script:
-#       - echo "DOCKERHUB_TAG is set to *${DOCKERHUB_TAG}*"
-#       - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_setup.sh
-#       - echo "Saving Docker Images"
-#       - docker images
+    - stage: "Stage 3"
+      name: "Docker Setup"
+      script:
+        - echo "DOCKERHUB_TAG is set to *${DOCKERHUB_TAG}*"
+        - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_setup.sh
+        - echo "Saving Docker Images"
+        - docker images
 #       - docker save -o docker_images/images.tar $(docker images -a -q)
 #       - echo docker save -o docker_images/images.tar ${DOCKERHUB_TAG}
 #       - docker save -o docker_images/images.tar ${DOCKERHUB_TAG}
-#   - stage: "Stage 4"
-#     name: "Pytest Unit Tests"
-#     script:
-#       - echo ${TASK}
-#       - echo ${HOME}
-#       - ls -al ${HOME}
-#       # These commands should all be in a script in METplus repo.
-#       # ie.
-#       # - ${TRAVIS_BUILD_DIR}/ci/travis_unit_tests.sh
-#       #
-#       - mkdir -p ${OWNER_BUILD_DIR}/pytmp.docker;
-#       - echo "DOCKERHUB_TAG is set to *${DOCKERHUB_TAG}*"
+    - stage: "Stage 4"
+      name: "Pytest Unit Tests"
+      script:
+        - echo ${TASK}
+        - echo ${HOME}
+        - ls -al ${HOME}
+        # These commands should all be in a script in METplus repo.
+        # ie.
+        # - ${TRAVIS_BUILD_DIR}/ci/travis_unit_tests.sh
+        #
+        - mkdir -p ${OWNER_BUILD_DIR}/pytmp.docker;
+        - echo "DOCKERHUB_TAG is set to *${DOCKERHUB_TAG}*"
 #       - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_setup.sh
-#       - docker run --rm -v ${OWNER_BUILD_DIR}:${DOCKER_WORK_DIR} ${DOCKERHUB_TAG} /bin/bash -c "pip3 install pytest-cov; export METPLUS_PYTEST_HOST=docker; cd ${DOCKER_WORK_DIR}/METplus/internal_tests/pytests; pytest --cov=../../metplus"
+        - docker run --rm -v ${OWNER_BUILD_DIR}:${DOCKER_WORK_DIR} ${DOCKERHUB_TAG} /bin/bash -c "pip3 install pytest-cov; export METPLUS_PYTEST_HOST=docker; cd ${DOCKER_WORK_DIR}/METplus/internal_tests/pytests; pytest --cov=../../metplus"
 #       # Dump the output directories from running METplus
-#       - ls -alR ${OWNER_BUILD_DIR}/pytmp.docker
-#   - stage:  "Stage 5"
-#     name: "Use Case Tests - met_tool_wrapper"
-#     script:
-#       - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_met_tool_wrapper.sh
+        - ls -alR ${OWNER_BUILD_DIR}/pytmp.docker
+    - stage:  "Stage 5"
+      name: "Use Case Tests - met_tool_wrapper"
+      script:
+        - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_met_tool_wrapper.sh
 
 #   - name: "Use Case Tests - cryosphere"
 #     script:
@@ -181,10 +181,10 @@ matrix:
 #   - name: "Use Case Tests - precipitation"
 #     script:
 #       - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_model_applications.sh --precipitation
-#   - stage:  "Stage 6"
-#     name: "Use Case Tests - s2s, space_weather, tc_and_extra_tc"
-#     script:
-#       - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_model_applications.sh --s2s --space_weather --tc_and_extra_tc
+    - stage:  "Stage 6"
+      name: "Use Case Tests - s2s, space_weather, tc_and_extra_tc"
+      script:
+        - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_model_applications.sh --s2s --space_weather --tc_and_extra_tc
 
   # stage 1 fails due to doc8 has errors.
   # This allows stage 1 to fail so the build can continue.
