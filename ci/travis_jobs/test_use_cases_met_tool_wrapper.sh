@@ -20,13 +20,14 @@ mkdir -p ${TRAVIS_OUTPUT_BASE}
 ### Loading Docker Image from cache
 echo 'Timing Docker Load'
 SECONDS=0
-IMAGE=docker_images/images.tar
-if [ -e "$IMAGE" ]; then
-  tar -tvf $IMAGE;
-else
-  echo "$IMAGE does not exist";
-fi;
+#IMAGE=docker_images/images.tar
+#if [ -e "$IMAGE" ]; then
+#  tar -tvf $IMAGE;
+#else
+#  echo "$IMAGE does not exist";
+#fi;
 docker load -i docker_images/images.tar || true
+docker images
 duration=$SECONDS
 echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
 echo
