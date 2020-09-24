@@ -92,10 +92,10 @@ env:
     - DOCKERHUB_USE_DEFAULT=true
 
 matrix:
+  - TASK=docs
   include:
     - stage: "Stage 1"
       name: "Docs"
-      TASK=docs
 # ${TRAVIS_BUILD_DIR} = /home/travis/build/<user ie. NCAR>/METplus
       script: 
         - pwd 
