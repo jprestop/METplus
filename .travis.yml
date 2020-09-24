@@ -16,7 +16,6 @@
 # These are configurable
 #  DOCKERHUB_USE_DEFAULT
 #  branches to build: develop
-#
  
 language: python
 dist: xenial #Ubuntu Xenial 16.04
