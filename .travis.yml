@@ -101,16 +101,17 @@ matrix:
         - pwd 
         - ls -l
         - echo ${TRAVIS_BUILD_DIR}
+        - echo ${TASK}
 #       - export TASK=${TASK}
     # WARNING: can't have comments in if block below.
     # doc8 is an opinionated style checker
     # doc8 METplus returns errors in the rst. We want the build
     # to continue so either, add true; in the if conditional or
     # use allow_failures, keyword.
-        - if [[ ${TASK} == "docs" ]]; then
-            doc8 docs/index.rst docs/Users_Guide/ docs/Contributors_Guide/;
-            true;
-          fi;
+#       - if [[ ${TASK} == "docs" ]]; then
+#           doc8 docs/index.rst docs/Users_Guide/ docs/Contributors_Guide/;
+#           true;
+#         fi;
 
 #matrix:
 #  include:
