@@ -99,9 +99,9 @@ matrix:
 # ${TRAVIS_BUILD_DIR} = /home/travis/build/<user ie. NCAR>/METplus
       script: 
         - pwd 
-        - ls -l
-        - echo ${TRAVIS_BUILD_DIR}
-        - echo ${TASK}
+#       - ls -l
+#       - echo ${TRAVIS_BUILD_DIR}
+#       - echo ${TASK}
 #       - export TASK=${TASK}
     # WARNING: can't have comments in if block below.
     # doc8 is an opinionated style checker
