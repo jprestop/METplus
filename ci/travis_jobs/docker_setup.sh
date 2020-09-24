@@ -35,8 +35,8 @@ SECONDS=0
 echo "Saving Docker Images"
 docker images
 # docker save -o docker_images/images.tar $(docker images -a -q)
-echo docker save -o docker_images/images.tar ${DOCKERHUB_TAG} dtcenter/MET:${DOCKERHUB_MET_TAGNAME}
-docker save -o docker_images/images.tar ${DOCKERHUB_TAG} dtcenter/MET:${DOCKERHUB_MET_TAGNAME}
+echo docker save -o docker_images/images.tar ${DOCKERHUB_TAG} dtcenter/met:${DOCKERHUB_MET_TAGNAME}
+docker save -o docker_images/images.tar ${DOCKERHUB_TAG} dtcenter/met:${DOCKERHUB_MET_TAGNAME}
 duration=$SECONDS
 echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
 
