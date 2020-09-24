@@ -8,7 +8,7 @@ echo 'doing docker build'
 ### Loading Docker Image from cache
 echo 'Timing Docker Load'
 SECONDS=0
-IMAGE=docker_images/images.tar
+#IMAGE=docker_images/images.tar
 #if [ -e "$IMAGE" ]; then
 #  tar -tvf $IMAGE;
 #else
