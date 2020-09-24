@@ -221,10 +221,10 @@ before_install:
   - echo "Docker Load..."
   - IMAGE=docker_images/images.tar
   - if [ -e "$IMAGE" ]; then
-      tar -tvf $IMAGE
+      tar -tvf $IMAGE;
     else 
-      echo "$IMAGE does not exist"
-    fi
+      echo "$IMAGE does not exist";
+    fi;
   - docker load -i docker_images/images.tar || true
   - docker images
 
