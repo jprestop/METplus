@@ -18,7 +18,7 @@ echo mkdir -p ${TRAVIS_INPUT_BASE}
 mkdir -p ${TRAVIS_INPUT_BASE}
 
 cd ${TRAVIS_INPUT_BASE}
-
+# added comment to test caching
 # get sample data for all use case categories provided and add arguments to call to test script
 test_args=''
 for i in "$@"
