@@ -182,10 +182,10 @@ matrix:
 #   - name: "Use Case Tests - precipitation"
 #     script:
 #       - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_model_applications.sh --precipitation
-    - stage:  "Stage 6"
-      name: "Use Case Tests - s2s, space_weather, tc_and_extra_tc"
-      script:
-        - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_model_applications.sh --s2s --space_weather --tc_and_extra_tc
+#   - stage:  "Stage 6"
+#     name: "Use Case Tests - s2s, space_weather, tc_and_extra_tc"
+#     script:
+#       - ${TRAVIS_BUILD_DIR}/ci/travis_jobs/test_use_cases_model_applications.sh --s2s --space_weather --tc_and_extra_tc
 
   # stage 1 fails due to doc8 has errors.
   # This allows stage 1 to fail so the build can continue.
