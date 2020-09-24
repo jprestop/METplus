@@ -8,6 +8,10 @@ echo 'doing docker build'
 echo Timing docker build...
 SECONDS=0
 
+echo Pull docker image from DockerHub
+docker pull ${DOCKERHUB_TAG}
+
+echo Build docker image using pulled image as cached from rebuild anything that has updated since the last docker push
 docker build --cache-from ${DOCKERHUB_TAG} -t ${DOCKERHUB_TAG} --build-arg SOURCE_BRANCH=${DOCKERHUB_DEFAULT_TAGNAME} --build-arg MET_BRANCH=${DOCKERHUB_MET_TAGNAME} --build-arg DO_GIT_CLONE ${TRAVIS_BUILD_DIR}/ci/docker
 
 duration=$SECONDS
