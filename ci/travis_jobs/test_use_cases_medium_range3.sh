@@ -20,10 +20,26 @@ mkdir -p ${TRAVIS_OUTPUT_BASE}
 
 #${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_setup.sh
 
+### Loading Docker Image from cache
+echo 'Timing Docker Load'
+SECONDS=0
+IMAGE=docker_images/images.tar
+if [ -e "$IMAGE" ]; then
+  tar -tvf $IMAGE;
+else
+  echo "$IMAGE does not exist";
+fi;
+docker load -i docker_images/images.tar || true
+duration=$SECONDS
+echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
+echo
+
 echo Run tests...
 returncode=0
 
 VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py medium_range3`
+echo 'Docker Images...'
+docker images
 
 echo medium_range3
 
