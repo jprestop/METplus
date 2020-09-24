@@ -91,14 +91,14 @@ env:
     # if set to false, to use DOCKER_USER_* settings, your dockerhub container.
     - DOCKERHUB_USE_DEFAULT=true
 
-jobs:
-  include:
-    - stage: "Stage 1"
-      name: "Docs"
-      TASK=docs
+#jobs:
+# include:
+#   - stage: "Stage 1"
+#     name: "Docs"
+#     TASK=docs
 # ${TRAVIS_BUILD_DIR} = /home/travis/build/<user ie. NCAR>/METplus
-      script: 
-        - pwd 
+#     script: 
+#       - pwd 
 #       - ls -l
 #       - echo ${TRAVIS_BUILD_DIR}
 #       - echo ${TASK}
@@ -113,23 +113,23 @@ jobs:
 #           true;
 #         fi;
 
-#matrix:
-#  include:
+matrix:
+  include:
     # Example Note adding python: "3.7-dev", before stage: Stage 2 keyword 
     # adds another job to Stage 1, and runs the script: in Stage 1.
     # Unless it is python: "3.7" than it is ignored since 3.7 already
     # defined for Stage 1.
-#   - stage: "Stage 2"
-#     name: "Environment test"
-#     script: 
-#       - date
-#       - printenv;
-#       - echo "===================================";
-#         printenv | grep -i travis;
-#       - echo "===================================";
-#         printenv | grep -i ncar;
-#         echo "==== who am I";
-#         whoami;
+    - stage: "Stage 2"
+      name: "Environment test"
+      script: 
+        - date
+        - printenv;
+        - echo "===================================";
+          printenv | grep -i travis;
+        - echo "===================================";
+          printenv | grep -i ncar;
+          echo "==== who am I";
+          whoami;
 #   - stage: "Stage 3"
 #     name: "Docker Setup"
 #     script:
