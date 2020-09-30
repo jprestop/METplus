@@ -18,43 +18,17 @@ mkdir -p ${TRAVIS_PREV_OUTPUT_BASE}
 echo mkdir -p ${TRAVIS_OUTPUT_BASE}
 mkdir -p ${TRAVIS_OUTPUT_BASE}
 
-#${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_setup.sh
-### Loading Docker Image from cache
-echo 'Timing Docker Load'
-SECONDS=0
-#IMAGE=docker_images/images.tar
-#if [ -e "$IMAGE" ]; then
-#  tar -tvf $IMAGE;
-#else
-#  echo "$IMAGE does not exist";
-#fi;
-docker load -i docker_images/images.tar || true
-docker images
-duration=$SECONDS
-echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
-echo
+${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_setup.sh
 
 echo Run tests...
 returncode=0
 
-# create data volumes and get list of arguments to pass to docker run
-echo ${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py $@
-VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py $@`
+VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py data_assimilation`
 
-# download GempakToCF.jar
-${TRAVIS_BUILD_DIR}/ci/travis_jobs/download_gempaktocf.sh
+echo data_assimilation
 
-test_args=''
-for i in "$@"
-do
-  if [ -z "$i" ]; then
-    continue
-  fi
-
-  test_args=${test_args}" "${i}
-done
-
-${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_run_metplus.sh "${DOCKER_WORK_DIR}/METplus/internal_tests/use_cases/run_test_use_cases.sh docker ${test_args}" $returncode "$VOLUMES"
+# use docker_run_metplus.sh
+${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_run_metplus.sh "pip3 install netCDF4; ${DOCKER_WORK_DIR}/METplus/internal_tests/use_cases/run_test_use_cases.sh docker --config model_applications/data_assimilation/StatAnalysis_fcstHAFS_obsPrepBufr_JEDI_IODA_interface.conf,user_env_vars.MET_PYTHON_EXE=python3" $returncode "$VOLUMES"
 returncode=$?
 
 # remove logs dir and move data to previous output base so next run will not prompt
@@ -70,7 +44,6 @@ ls -alR ${TRAVIS_OUTPUT_BASE}
 echo
 echo listing TRAVIS_PREV_OUTPUT_BASE
 ls -alR ${TRAVIS_PREV_OUTPUT_BASE}
-
 
 # Dump and see how much space is left on Travis disk.
 df -h
