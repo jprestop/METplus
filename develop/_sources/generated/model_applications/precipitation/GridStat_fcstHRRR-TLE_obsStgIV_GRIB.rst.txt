@@ -184,13 +184,13 @@ Keywords
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+  .. container:: sphx-glr-download
 
      :download:`Download Python source code: GridStat_fcstHRRR-TLE_obsStgIV_GRIB.py <GridStat_fcstHRRR-TLE_obsStgIV_GRIB.py>`
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
+  .. container:: sphx-glr-download
 
      :download:`Download Jupyter notebook: GridStat_fcstHRRR-TLE_obsStgIV_GRIB.ipynb <GridStat_fcstHRRR-TLE_obsStgIV_GRIB.ipynb>`
 

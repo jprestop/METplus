@@ -156,13 +156,13 @@ sphinx_gallery_thumbnail_path = '_static/met_tool_wrapper-TCGen.png'
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+  .. container:: sphx-glr-download
 
      :download:`Download Python source code: TCGen.py <TCGen.py>`
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
+  .. container:: sphx-glr-download
 
      :download:`Download Jupyter notebook: TCGen.ipynb <TCGen.ipynb>`
 

@@ -150,13 +150,13 @@ sphinx_gallery_thumbnail_path = '_static/met_tool_wrapper-PointStat.png'
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+  .. container:: sphx-glr-download
 
      :download:`Download Python source code: PointStat.py <PointStat.py>`
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
+  .. container:: sphx-glr-download
 
      :download:`Download Jupyter notebook: PointStat.ipynb <PointStat.ipynb>`
 

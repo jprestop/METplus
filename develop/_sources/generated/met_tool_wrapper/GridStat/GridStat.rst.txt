@@ -147,13 +147,13 @@ sphinx_gallery_thumbnail_path = '_static/met_tool_wrapper-GridStat.png'
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+  .. container:: sphx-glr-download
 
      :download:`Download Python source code: GridStat.py <GridStat.py>`
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
+  .. container:: sphx-glr-download
 
      :download:`Download Jupyter notebook: GridStat.ipynb <GridStat.ipynb>`
 
