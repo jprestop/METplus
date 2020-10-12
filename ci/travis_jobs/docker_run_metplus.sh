@@ -10,11 +10,10 @@ start_seconds=$SECONDS
 docker pull ${DOCKERHUB_TAG}
 
 duration=$(( SECONDS - start_seconds ))
-echo --TIMING docker_run_metplus
-echo "--TIMING docker pull took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo --TIMING docker_pull in docker_run_metplus $VOLUMES
+echo "--TIMING docker pull ${DOCKERHUB_TAG} took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo CURRENT_BRANCH = ${CURRENT_BRANCH}
-
 
 echo 'In docker_run_metplus, $VOLUMES= ',$VOLUMES
 echo 'DOCKER IMAGES in docker_run_metplus'
@@ -29,8 +28,8 @@ docker run --rm --user root:$UID $VOLUMES -v ${OWNER_BUILD_DIR}:${DOCKER_WORK_DI
 ret=$?
 
 duration=$(( SECONDS - start_seconds ))
-echo --TIMING docker_run_metplus
-echo "--Timing docker run took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo --TIMING docker run in docker_run_metplus
+echo "--TIMING docker run took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 # check return codes
 echo "In docker_run_metplus.sh previous return code: $2

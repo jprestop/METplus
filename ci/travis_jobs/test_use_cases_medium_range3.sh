@@ -23,18 +23,18 @@ returncode=0
 
 echo CURRENT_BRANCH = ${CURRENT_BRANCH}
 
-echo Timing get data volumes...
+echo Timing get data volumes in teset_use_cases_medium_range3...
 start_seconds=$SECONDS
 
 VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py medium_range3`
 
 duration=$(( SECONDS - start_seconds ))
-echo TIMING test_use_cases_medium_range3 $VOLUMES
+echo TIMING get_data_volumes.py in test_use_cases_medium_range3 $VOLUMES
 echo "TIMING get data volumes took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo medium_range3
 
-echo Timing docker_run_metplus...
+echo Timing docker_run_metplus in test_use_cases_data_assimilation...
 start_seconds=$SECONDS
 
 # use docker_run_metplus.sh
@@ -42,7 +42,7 @@ ${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_run_metplus.sh "${DOCKER_WORK_DIR}/MET
 returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
-echo TIMING test_use_cases_medium_range3 $VOLUMES
+echo TIMING docker_run_metplus in test_use_cases_medium_range3 $VOLUMES
 echo "TIMING docker_run_metplus took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 # remove logs dir and move data to previous output base so next run will not prompt
