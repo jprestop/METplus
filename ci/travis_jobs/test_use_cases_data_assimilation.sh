@@ -30,7 +30,7 @@ VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py data_assimilatio
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_case_data_assimilation $VOLUMES
-echo "Docker get_data_volumes in data assimilation took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker get_data_volumes in data assimilation took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo data_assimilation
 
@@ -43,7 +43,7 @@ returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_cases_data_assimilation
-echo "docker_run_metplus  in data assimilation took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker_run_metplus  in data assimilation took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 # remove logs dir and move data to previous output base so next run will not prompt
 rm -rf ${TRAVIS_OUTPUT_BASE}/logs

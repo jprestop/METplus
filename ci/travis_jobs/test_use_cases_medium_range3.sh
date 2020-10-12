@@ -30,7 +30,7 @@ VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py medium_range3`
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_cases_medium_range3 $VOLUMES
-echo "Get data volumes took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING get data volumes took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo medium_range3
 
@@ -43,7 +43,7 @@ returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_cases_medium_range3 $VOLUMES
-echo "docker_run_metplus took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker_run_metplus took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 # remove logs dir and move data to previous output base so next run will not prompt
 rm -rf ${TRAVIS_OUTPUT_BASE}/logs

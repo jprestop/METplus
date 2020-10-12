@@ -38,7 +38,7 @@ VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py $@`
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_case_model_applications $VOLUMES
-echo "Get data volumes in model applications $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING get data volumes in model applications $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 
 # download GempakToCF.jar
@@ -62,7 +62,7 @@ returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_case_model_applications
-echo "docker_run_metplus in model applications $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker_run_metplus in model applications $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 # remove logs dir and move data to previous output base so next run will not prompt
 rm -rf ${TRAVIS_OUTPUT_BASE}/logs

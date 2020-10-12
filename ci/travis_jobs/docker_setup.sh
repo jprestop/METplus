@@ -10,7 +10,7 @@ docker pull ${DOCKERHUB_TAG} || true
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING docker_setup
-echo "Docker pull took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker pull took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo CURRENT_BRANCH = ${CURRENT_BRANCH}
 
@@ -22,7 +22,7 @@ docker build --pull --cache-from ${DOCKERHUB_TAG} -t ${DOCKERHUB_TAG} --build-ar
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING docker_setup
-echo "Docker build took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker build took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 echo
 
 echo Timing docker push...
@@ -33,7 +33,7 @@ docker push ${DOCKERHUB_TAG}
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING docker_setup
-echo "Docker push took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker push took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 echo
 
 echo DOCKER IMAGES after DOCKER_SETUP

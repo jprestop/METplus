@@ -11,7 +11,7 @@ docker pull ${DOCKERHUB_TAG}
 
 duration=$(( SECONDS - start_seconds ))
 echo --TIMING docker_run_metplus
-echo "--Docker pull took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "--TIMING docker pull took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo CURRENT_BRANCH = ${CURRENT_BRANCH}
 
@@ -30,7 +30,7 @@ ret=$?
 
 duration=$(( SECONDS - start_seconds ))
 echo --TIMING docker_run_metplus
-echo "--Docker run took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "--Timing docker run took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 # check return codes
 echo "In docker_run_metplus.sh previous return code: $2

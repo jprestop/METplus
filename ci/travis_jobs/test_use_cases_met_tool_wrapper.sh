@@ -25,7 +25,7 @@ start_seconds=$SECONDS
 VOLUMES=`${TRAVIS_BUILD_DIR}/ci/travis_jobs/get_data_volumes.py met_tool_wrapper`
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_cases_met_tool_wrapper $VOLUMES
-echo "Docker get_data_volulmes took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker get_data_volulmes took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 # download GempakToCF.jar
 ${TRAVIS_BUILD_DIR}/ci/travis_jobs/download_gempaktocf.sh
@@ -41,7 +41,7 @@ returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_cases_met_tool_wrapper $VOLUMES
-echo "Docker docker_run_metplus 1 took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker docker_run_metplus 1 took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo 'Intermediate return code=' $returncode 
 
@@ -56,7 +56,7 @@ returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_cases_met_tool_wrapper $VOLUMES
-echo "Docker docker_run_metplus 2 took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker docker_run_metplus 2 took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo '2nd Intermediate return code=' $returncode 
 
@@ -72,7 +72,7 @@ returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
 echo TIMING test_use_cases_met_tool_wrapper $VOLUMES
-echo "Docker docker_run_metplus 3 took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
+echo "TIMING docker docker_run_metplus 3 took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 echo 'Final return code=' $returncode 
 
