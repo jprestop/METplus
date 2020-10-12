@@ -25,33 +25,11 @@ Climate
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Grid-Stat: CESM and GFS Analysis CONUS Temp">
-
-.. only:: html
-
- .. figure:: /generated/model_applications/climate/images/thumb/sphx_glr_GridStat_fcstCESM_obsGFS_ConusTemp_thumb.png
-     :alt: Grid-Stat: CESM and GFS Analysis CONUS Temp
-
-     :ref:`sphx_glr_generated_model_applications_climate_GridStat_fcstCESM_obsGFS_ConusTemp.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/model_applications/climate/GridStat_fcstCESM_obsGFS_ConusTemp
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="MODE: CESM and GPCP Asian Monsoon Precipitation">
 
 .. only:: html
 
  .. figure:: /generated/model_applications/climate/images/thumb/sphx_glr_MODE_fcstCESM_obsGPCP_AsianMonsoonPrecip_thumb.png
-     :alt: MODE: CESM and GPCP Asian Monsoon Precipitation
 
      :ref:`sphx_glr_generated_model_applications_climate_MODE_fcstCESM_obsGPCP_AsianMonsoonPrecip.py`
 
@@ -64,6 +42,26 @@ Climate
    :hidden:
 
    /generated/model_applications/climate/MODE_fcstCESM_obsGPCP_AsianMonsoonPrecip
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Grid-Stat: CESM and GFS Analysis CONUS Temp">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/climate/images/thumb/sphx_glr_GridStat_fcstCESM_obsGFS_ConusTemp_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_climate_GridStat_fcstCESM_obsGFS_ConusTemp.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/climate/GridStat_fcstCESM_obsGFS_ConusTemp
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -81,14 +79,13 @@ Convection Allowing Models
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/ convection_allowing_model/ EnsembleStat_fcstHRRRE_obsHRRRE_Sfc _Sfc_MultiFi...">
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/ convection_allowing_models/ GridStat_fcstHRRR_obsPracPerfect _SurrogateSeve...">
 
 .. only:: html
 
- .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField_thumb.png
-     :alt: Ensemble-Stat: Ensemble Statistics using Obs Uncertainty
+ .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_GridStat_fcstHRRR_obsPracPerfect_SurrogateSevereProb_thumb.png
 
-     :ref:`sphx_glr_generated_model_applications_convection_allowing_models_EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField.py`
+     :ref:`sphx_glr_generated_model_applications_convection_allowing_models_GridStat_fcstHRRR_obsPracPerfect_SurrogateSevereProb.py`
 
 .. raw:: html
 
@@ -98,7 +95,7 @@ Convection Allowing Models
 .. toctree::
    :hidden:
 
-   /generated/model_applications/convection_allowing_models/EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField
+   /generated/model_applications/convection_allowing_models/GridStat_fcstHRRR_obsPracPerfect_SurrogateSevereProb
 
 .. raw:: html
 
@@ -107,7 +104,6 @@ Convection Allowing Models
 .. only:: html
 
  .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_GridStat_fcstHRRR_obsPracPerfect_SurrogateSevere_thumb.png
-     :alt: Grid-Stat: Surrogate Severe and Practically Perfect Evaluation
 
      :ref:`sphx_glr_generated_model_applications_convection_allowing_models_GridStat_fcstHRRR_obsPracPerfect_SurrogateSevere.py`
 
@@ -128,7 +124,6 @@ Convection Allowing Models
 .. only:: html
 
  .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_MODE_fcstHRRR_obsMRMS_Hail_GRIB2_thumb.png
-     :alt: MODE: Hail Verification
 
      :ref:`sphx_glr_generated_model_applications_convection_allowing_models_MODE_fcstHRRR_obsMRMS_Hail_GRIB2.py`
 
@@ -144,14 +139,13 @@ Convection Allowing Models
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/ convection_allowing_models/ GridStat_fcstHRRR_obsPracPerfect _SurrogateSeve...">
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/ convection_allowing_model/ EnsembleStat_fcstHRRRE_obsHRRRE_Sfc _Sfc_MultiFi...">
 
 .. only:: html
 
- .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_GridStat_fcstHRRR_obsPracPerfect_SurrogateSevereProb_thumb.png
-     :alt: Grid-Stat: Surrogate Severe and Practically Perfect Probabilistic Evaluation
+ .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField_thumb.png
 
-     :ref:`sphx_glr_generated_model_applications_convection_allowing_models_GridStat_fcstHRRR_obsPracPerfect_SurrogateSevereProb.py`
+     :ref:`sphx_glr_generated_model_applications_convection_allowing_models_EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField.py`
 
 .. raw:: html
 
@@ -161,7 +155,7 @@ Convection Allowing Models
 .. toctree::
    :hidden:
 
-   /generated/model_applications/convection_allowing_models/GridStat_fcstHRRR_obsPracPerfect_SurrogateSevereProb
+   /generated/model_applications/convection_allowing_models/EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField
 
 .. raw:: html
 
@@ -170,7 +164,6 @@ Convection Allowing Models
 .. only:: html
 
  .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_Point2Grid_obsLSR_ObsOnly_PracticallyPerfect_thumb.png
-     :alt: Point2Grid: Calculate Practically Perfect Probabilities
 
      :ref:`sphx_glr_generated_model_applications_convection_allowing_models_Point2Grid_obsLSR_ObsOnly_PracticallyPerfect.py`
 
@@ -191,7 +184,6 @@ Convection Allowing Models
 .. only:: html
 
  .. figure:: /generated/model_applications/convection_allowing_models/images/thumb/sphx_glr_EnsembleStat_fcstHRRR_fcstOnly_SurrogateSevere_thumb.png
-     :alt: Surrogate Severe Calculation: PCPCombine, EnsembleStat, and RegridDataPlane
 
      :ref:`sphx_glr_generated_model_applications_convection_allowing_models_EnsembleStat_fcstHRRR_fcstOnly_SurrogateSevere.py`
 
@@ -225,7 +217,6 @@ The frozen part of the earth system modeling framework (also referred to as sea-
 .. only:: html
 
  .. figure:: /generated/model_applications/cryosphere/images/thumb/sphx_glr_GridStat_MODE_fcstIMS_obsNCEP_sea_ice_thumb.png
-     :alt: Grid-Stat and MODE: Sea Ice Validation
 
      :ref:`sphx_glr_generated_model_applications_cryosphere_GridStat_MODE_fcstIMS_obsNCEP_sea_ice.py`
 
@@ -254,33 +245,11 @@ Lower resolution model configuration (>4km) usually producing forecasts out to 7
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/medium_range/PointStat_fcstGFS_obsGDAS _UpperAir_MultiField _PrepBufr.conf">
-
-.. only:: html
-
- .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr_thumb.png
-     :alt: Point-Stat: Standard Verification of Global Upper Air
-
-     :ref:`sphx_glr_generated_model_applications_medium_range_PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/model_applications/medium_range/PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="model_applications/medium_range/GridStat_fcstGFS_obsGFS _climoNCEP_MultiField.conf">
 
 .. only:: html
 
  .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_GridStat_fcstGFS_obsGFS_climoNCEP_MultiField_thumb.png
-     :alt: Grid-Stat: Compute Anomaly Correlation using Climatology
 
      :ref:`sphx_glr_generated_model_applications_medium_range_GridStat_fcstGFS_obsGFS_climoNCEP_MultiField.py`
 
@@ -301,7 +270,6 @@ Lower resolution model configuration (>4km) usually producing forecasts out to 7
 .. only:: html
 
  .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead_thumb.png
-     :alt: Multi_Tool: Feature Relative by Lead (with lead groupings)
 
      :ref:`sphx_glr_generated_model_applications_medium_range_TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead.py`
 
@@ -317,12 +285,51 @@ Lower resolution model configuration (>4km) usually producing forecasts out to 7
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/medium_range/PointStat_fcstGFS_obsGDAS _UpperAir_MultiField _PrepBufr.conf">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_medium_range_PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/medium_range/PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/medium_range/PointStat_fcstGFS_obsNAM_Sfc _MultiField_PrepBufr.conf">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_PointStat_fcstGFS_obsNAM_Sfc_MultiField_PrepBufr_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_medium_range_PointStat_fcstGFS_obsNAM_Sfc_MultiField_PrepBufr.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/medium_range/PointStat_fcstGFS_obsNAM_Sfc_MultiField_PrepBufr
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="model_applications/medium_range/GridStat_fcstGFS_obsGFS _Sfc_MultiField.conf">
 
 .. only:: html
 
  .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_GridStat_fcstGFS_obsGFS_Sfc_MultiField_thumb.png
-     :alt: Grid-Stat: Standard Verification of Surface Fields
 
      :ref:`sphx_glr_generated_model_applications_medium_range_GridStat_fcstGFS_obsGFS_Sfc_MultiField.py`
 
@@ -343,7 +350,6 @@ Lower resolution model configuration (>4km) usually producing forecasts out to 7
 .. only:: html
 
  .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit_thumb.png
-     :alt: Multi_Tool: Feature Relative by Init
 
      :ref:`sphx_glr_generated_model_applications_medium_range_TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.py`
 
@@ -359,33 +365,11 @@ Lower resolution model configuration (>4km) usually producing forecasts out to 7
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/medium_range/PointStat_fcstGFS_obsNAM_Sfc _MultiField_PrepBufr.conf">
-
-.. only:: html
-
- .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_PointStat_fcstGFS_obsNAM_Sfc_MultiField_PrepBufr_thumb.png
-     :alt: Point-Stat: Standard Verification for CONUS Surface
-
-     :ref:`sphx_glr_generated_model_applications_medium_range_PointStat_fcstGFS_obsNAM_Sfc_MultiField_PrepBufr.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/model_applications/medium_range/PointStat_fcstGFS_obsNAM_Sfc_MultiField_PrepBufr
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="Example script with invalid Python syntax ">
 
 .. only:: html
 
  .. figure:: /generated/model_applications/medium_range/images/thumb/sphx_glr_TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead_PyEmbed_IVT_thumb.png
-     :alt: SyntaxError
 
      :ref:`sphx_glr_generated_model_applications_medium_range_TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead_PyEmbed_IVT.py`
 
@@ -414,12 +398,31 @@ Any fields that can be defined as precipitation, including rain, snow, and other
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/precipitation/GridStat_fcstGFS _obsCCPA_Grib.conf">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_GridStat_fcstGFS_obsCCPA_GRIB_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_precipitation_GridStat_fcstGFS_obsCCPA_GRIB.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/precipitation/GridStat_fcstGFS_obsCCPA_GRIB
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="model_applications/precipitation/MTD_fcstHRRR-TLE _obsMRMS.conf">
 
 .. only:: html
 
  .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_MTD_fcstHRRR-TLE_obsMRMS_thumb.png
-     :alt: MTD: 6hr QPF Use Case
 
      :ref:`sphx_glr_generated_model_applications_precipitation_MTD_fcstHRRR-TLE_obsMRMS.py`
 
@@ -435,12 +438,31 @@ Any fields that can be defined as precipitation, including rain, snow, and other
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/precipitation/GridStat_fcstHREFmean _obsStgIV_Gempak.conf">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_GridStat_fcstHREFmean_obsStgIV_Gempak_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_precipitation_GridStat_fcstHREFmean_obsStgIV_Gempak.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/precipitation/GridStat_fcstHREFmean_obsStgIV_Gempak
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="model_applications/precipitation/MTD_fcstHRRR-TLE_FcstOnly _RevisionSeries_GRIB.conf">
 
 .. only:: html
 
  .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_MTD_fcstHRRR-TLE_FcstOnly_RevisionSeries_GRIB_thumb.png
-     :alt: MTD: Build Revision Series to Evaluate Forecast Consistency
 
      :ref:`sphx_glr_generated_model_applications_precipitation_MTD_fcstHRRR-TLE_FcstOnly_RevisionSeries_GRIB.py`
 
@@ -461,7 +483,6 @@ Any fields that can be defined as precipitation, including rain, snow, and other
 .. only:: html
 
  .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_GridStat_fcstHREFmean_obsStgIV_NetCDF_thumb.png
-     :alt: Grid-Stat: 6hr QPF in NetCDF format
 
      :ref:`sphx_glr_generated_model_applications_precipitation_GridStat_fcstHREFmean_obsStgIV_NetCDF.py`
 
@@ -477,54 +498,11 @@ Any fields that can be defined as precipitation, including rain, snow, and other
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/precipitation/GridStat_fcstGFS _obsCCPA_Grib.conf">
-
-.. only:: html
-
- .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_GridStat_fcstGFS_obsCCPA_GRIB_thumb.png
-     :alt: Grid-Stat: 24-hour QPF Use Case
-
-     :ref:`sphx_glr_generated_model_applications_precipitation_GridStat_fcstGFS_obsCCPA_GRIB.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/model_applications/precipitation/GridStat_fcstGFS_obsCCPA_GRIB
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/precipitation/GridStat_fcstHREFmean _obsStgIV_Gempak.conf">
-
-.. only:: html
-
- .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_GridStat_fcstHREFmean_obsStgIV_Gempak_thumb.png
-     :alt: Grid-Stat: 6hr QPF in GEMPAK format
-
-     :ref:`sphx_glr_generated_model_applications_precipitation_GridStat_fcstHREFmean_obsStgIV_Gempak.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/model_applications/precipitation/GridStat_fcstHREFmean_obsStgIV_Gempak
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="model_applications/precipitation/GridStat_fcstHRRR _obsStgIV_GRIB.conf">
 
 .. only:: html
 
  .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_GridStat_fcstHRRR-TLE_obsStgIV_GRIB_thumb.png
-     :alt: Grid-Stat: 6hr PQPF Probability Verification
 
      :ref:`sphx_glr_generated_model_applications_precipitation_GridStat_fcstHRRR-TLE_obsStgIV_GRIB.py`
 
@@ -545,7 +523,6 @@ Any fields that can be defined as precipitation, including rain, snow, and other
 .. only:: html
 
  .. figure:: /generated/model_applications/precipitation/images/thumb/sphx_glr_EnsembleStat_fcstHRRRE_FcstOnly_NetCDF_thumb.png
-     :alt: Ensemble-Stat: Basic Post-Processing only
 
      :ref:`sphx_glr_generated_model_applications_precipitation_EnsembleStat_fcstHRRRE_FcstOnly_NetCDF.py`
 
@@ -579,7 +556,6 @@ Subseasonal-to-Seasonal model configurations; Lower resolution model configurati
 .. only:: html
 
  .. figure:: /generated/model_applications/s2s/images/thumb/sphx_glr_GridStat_SeriesAnalysis_fcstNMME_obsCPC_seasonal_forecast_thumb.png
-     :alt: Grid-Stat and Series-Analysis: BMKG APIK Seasonal Forecast
 
      :ref:`sphx_glr_generated_model_applications_s2s_GridStat_SeriesAnalysis_fcstNMME_obsCPC_seasonal_forecast.py`
 
@@ -613,7 +589,6 @@ Upper atmosphere and geospace model configurations
 .. only:: html
 
  .. figure:: /generated/model_applications/space_weather/images/thumb/sphx_glr_GenVxMask_fcstGloTEC_FcstOnly_solar_altitude_thumb.png
-     :alt: GenVxMask: Solar Altitude
 
      :ref:`sphx_glr_generated_model_applications_space_weather_GenVxMask_fcstGloTEC_FcstOnly_solar_altitude.py`
 
@@ -634,7 +609,6 @@ Upper atmosphere and geospace model configurations
 .. only:: html
 
  .. figure:: /generated/model_applications/space_weather/images/thumb/sphx_glr_GridStat_fcstGloTEC_obsGloTEC_vx7_thumb.jpg
-     :alt: Grid-Stat: Analysis validation
 
      :ref:`sphx_glr_generated_model_applications_space_weather_GridStat_fcstGloTEC_obsGloTEC_vx7.py`
 
@@ -668,7 +642,6 @@ Any field that is associated with Tropical Cyclone and Extra-tropical Cyclones
 .. only:: html
 
  .. figure:: /generated/model_applications/tc_and_extra_tc/images/thumb/sphx_glr_Plotter_fcstGFS_obsGFS_ExtraTC_thumb.png
-     :alt: Cyclone Plotter: From TC-Pairs Output
 
      :ref:`sphx_glr_generated_model_applications_tc_and_extra_tc_Plotter_fcstGFS_obsGFS_ExtraTC.py`
 
@@ -689,7 +662,6 @@ Any field that is associated with Tropical Cyclone and Extra-tropical Cyclones
 .. only:: html
 
  .. figure:: /generated/model_applications/tc_and_extra_tc/images/thumb/sphx_glr_TCRMW_fcstGFS_fcstOnly_gonzalo_thumb.png
-     :alt: TCRMW: Hurricane Gonzalo
 
      :ref:`sphx_glr_generated_model_applications_tc_and_extra_tc_TCRMW_fcstGFS_fcstOnly_gonzalo.py`
 
@@ -710,7 +682,6 @@ Any field that is associated with Tropical Cyclone and Extra-tropical Cyclones
 .. only:: html
 
  .. figure:: /generated/model_applications/tc_and_extra_tc/images/thumb/sphx_glr_Plotter_fcstGFS_obsGFS_RPlotting_thumb.png
-     :alt: Track and Intensity Plotter: Generate mean, median and box plots
 
      :ref:`sphx_glr_generated_model_applications_tc_and_extra_tc_Plotter_fcstGFS_obsGFS_RPlotting.py`
 
@@ -737,13 +708,13 @@ Any field that is associated with Tropical Cyclone and Extra-tropical Cyclones
 
   .. container:: sphx-glr-download sphx-glr-download-python
 
-    :download:`Download all examples in Python source code: model_applications_python.zip </generated/model_applications/model_applications_python.zip>`
+    :download:`Download all examples in Python source code: model_applications_python.zip <//d1/personal/jpresto/jprestop/git/METplus/docs/generated/model_applications/model_applications_python.zip>`
 
 
 
   .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-    :download:`Download all examples in Jupyter notebooks: model_applications_jupyter.zip </generated/model_applications/model_applications_jupyter.zip>`
+    :download:`Download all examples in Jupyter notebooks: model_applications_jupyter.zip <//d1/personal/jpresto/jprestop/git/METplus/docs/generated/model_applications/model_applications_jupyter.zip>`
 
 
 .. only:: html
