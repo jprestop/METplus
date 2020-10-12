@@ -17,7 +17,7 @@ ${TRAVIS_BUILD_DIR}/ci/travis_jobs/docker_run_metplus.sh "pip3 install pytest-co
 returncode=$?
 
 duration=$(( SECONDS - start_seconds ))
-echo TIMING docker_setup in docker_run_metplus.sh $VOLUMES
+echo TIMING docker_run_metplus in test_unit.sh $VOLUMES
 echo "TIMING docker_run_metplus took $(($duration / 60)) minutes and $(($duration % 60)) seconds."
 
 #ls -alR ${TRAVIS_OUTPUT_BASE}
