@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. How to Create Your Own Wrapper &mdash; METplus 3.1 documentation</title>
+  <title>3. How to Create Your Own Wrapper &mdash; METplus develop documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="METplus 3.1 documentation" href="../index.html"/>
+    <link rel="top" title="METplus develop documentation" href="../index.html"/>
         <link rel="up" title="Contributor’s Guide" href="index.html"/>
         <link rel="next" title="4. Instructions for the Conda Environment" href="conda_env.html"/>
         <link rel="prev" title="2. Basic Components of METplus Python Wrappers" href="basic_components.html"/> 
@@ -81,7 +81,7 @@
             
               <div class="version">
                 
-                  3.1
+                  develop
                 
               </div>
             
@@ -236,7 +236,7 @@ You can copy example_wrapper.py or ascii2nc_wrapper.py to start.</p></li>
         <span class="n">time_info</span> <span class="o">=</span> <span class="n">time_util</span><span class="o">.</span><span class="n">ti_calculate</span><span class="p">(</span><span class="n">input_dict</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">custom_string</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">c_dict</span><span class="p">[</span><span class="s1">&#39;CUSTOM_LOOP_LIST&#39;</span><span class="p">]:</span>
             <span class="k">if</span> <span class="n">custom_string</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing custom string: </span><span class="si">{custom_string}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing custom string: </span><span class="si">{</span><span class="n">custom_string</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
             <span class="n">time_info</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">custom_string</span>
 
