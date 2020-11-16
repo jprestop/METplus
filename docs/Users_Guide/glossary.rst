@@ -1292,6 +1292,13 @@ METplus Configuration Glossary
      | *Family:*  [config]
      | *Default:*  1.0
 
+   ENSEMBLE_STAT_ENS_VLD_THRESH
+     Threshold for the ratio of the number of valid data values to the total number of expected ensemble members. This value is passed into the ensemble_stat config file to make sure the percentage of files that are valid meets the expectation.
+
+     | *Used by:*  EnsembleStat
+     | *Family:*  [config]
+     | *Default:*  NONE
+
    ENSEMBLE_STAT_GRID_VX
      .. warning:: **DEPRECATED:** Please use :term:`ENSEMBLE_STAT_REGRID_TO_GRID`.
 
@@ -1821,9 +1828,6 @@ METplus Configuration Glossary
 
    FCST_MIN_FORECAST
      .. warning:: **DEPRECATED:** Please use :term:`FCST_PCP_COMBINE_MIN_FORECAST`.
-
-   FCST_MAX_FORECAST
-     .. warning:: **DEPRECATED:** Please use :term:`FCST_PCP_COMBINE_MAX_FORECAST`.
 
    OBS_MIN_FORECAST
      .. warning:: **DEPRECATED:** Please use :term:`OBS_PCP_COMBINE_MIN_FORECAST`.
@@ -4962,6 +4966,7 @@ METplus Configuration Glossary
      | *Family:*  [config]
      | *Default:*  no
 
+
    TC_PAIRS_REFORMAT_DECK
      Set to true or yes if using cyclone data that needs to be reformatted to match the ATCF (Automated Tropical Cyclone Forecasting) format. If set to true or yes, you will need to set :term:`TC_PAIRS_REFORMAT_TYPE` to specify which type of reformatting to perform.
 
@@ -5033,7 +5038,9 @@ METplus Configuration Glossary
      | *Default:*  Varies
 
    TC_STAT_CMD_LINE_JOB
-     Specify expression(s) that will be passed to the MET tc_stat tool via the command line. Only specify if TC_STAT_RUN_VIA=CLI. Please refer to the `MET User's Guide <https://dtcenter.org/community-code/model-evaluation-tools-met/documentation>`_ chapter for tc-stat for the details on performing job summaries and job filters.
+     .. warning:: **DEPRECATED:** Please set :term:`TC_STAT_CONFIG_FILE` to run using a config file and leave it unset to run via the command line.
+
+     Old: Specify expression(s) that will be passed to the MET tc_stat tool via the command line. Only specify if TC_STAT_RUN_VIA=CLI. Please refer to the `MET User's Guide <https://dtcenter.org/community-code/model-evaluation-tools-met/documentation>`_ chapter for tc-stat for the details on performing job summaries and job filters.
 
      | *Used by:*  TCStat
      | *Family:*  [config]
@@ -5152,6 +5159,13 @@ METplus Configuration Glossary
      | *Default:*  Varies
 
    TC_STAT_INPUT_DIR
+     .. warning:: **DEPRECATED:** Please use :term:`TC_STAT_LOOKIN_DIR`.
+
+     | *Used by:*  TCStat
+     | *Family:*  [dir]
+     | *Default:*  Varies
+
+   TC_STAT_LOOKIN_DIR
      Specify the input directory where the MET tc_stat tool will look for files.
 
      | *Used by:*  TCStat
@@ -5165,12 +5179,15 @@ METplus Configuration Glossary
      | *Family:*  [dir]
      | *Default:*  Varies
 
-   TC_STAT_JOBS_LIST
+   TC_STAT_JOB_ARGS
      Specify expressions for the MET tc_stat tool to execute.
 
      | *Used by:*  TCStat
      | *Family:*  [config]
      | *Default:*  Varies
+
+   TC_STAT_JOBS_LIST
+     .. warning:: **DEPRECATED:** Please use :term:`TC_STAT_JOB_ARGS`.
 
    TC_STAT_LANDFALL
      Specify whether only those points occurring near landfall should be retained when using the MET tc_stat tool. Acceptable values: True/False
@@ -5222,7 +5239,9 @@ METplus Configuration Glossary
      | *Default:*  Varies
 
    TC_STAT_RUN_VIA
-     Specify the method for running the MET tc_stat tool. Acceptable values: CONFIG. If left blank (unset), tc_stat will run via the command line.
+     .. warning:: **DEPRECATED:** Please set :term:`TC_STAT_CONFIG_FILE` to run using a config file and leave it unset to run via the command line.
+
+     Old: Specify the method for running the MET tc_stat tool. Acceptable values: CONFIG. If left blank (unset), tc_stat will run via the command line.
 
      | *Used by:*  TCStat
      | *Family:*  [config]
@@ -5309,9 +5328,6 @@ METplus Configuration Glossary
 
    TIME_SUMMARY_FLAG
      .. warning:: **DEPRECATED:** Please use :term:`PB2NC_TIME_SUMMARY_FLAG` instead.
-
-   TIME_SUMMARY_TYPES
-     .. warning:: **DEPRECATED:** Please use :term:`PB2NC_TIME_SUMMARY_TYPES` instead.
 
    TITLE
      .. warning:: **DEPRECATED:** Please use :term:`TCMPR_PLOTTER_TITLE` instead.
